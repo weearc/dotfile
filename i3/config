@@ -270,7 +270,7 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 #bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 
 # Touchpad controls
-#bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
+bindsym XF86TouchpadToggle exec /some/path/toggletouchpad.sh # toggle touchpad
 
 # Media player controls
 #bindsym XF86AudioPlay exec playerctl play
@@ -289,3 +289,4 @@ exec_always --no-startup-id compton -b -I 0.13 -O 0.13
 
 # screenshot
 bindsym Print exec spectacle -f -g
+bindsym $mod+Print exec deepin-screenshot
