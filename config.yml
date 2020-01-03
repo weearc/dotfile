@@ -1,0 +1,13 @@
+# Pacman config and mirrors config
+# change pacman mirror to the following three mirrors
+mirror-change: false #default to false
+  first-mirror:
+  second-mirror:
+  third-mirror:
+
+enable-thirdparty-mirror: false #default to false
+  archlinux-cn: false #default to false
+  archlinux-fr: false #default to false
+
+enable-testing: false #default to false
+enable-multilib: true #default to true
