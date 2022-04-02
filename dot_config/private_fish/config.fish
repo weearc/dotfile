@@ -13,8 +13,8 @@ set -gx INFOPATH $PATH /usr/local/texlive/2019/texmf-dist/doc/info
 set -gx PATH $PATH /usr/local/texlive/2019/bin/x86_64-linux
 nvm use v11.14.0
 set -gx EDITOR $EDITOR /usr/bin/vim
-clear
 alias bc="bc -l"
+alias czm="chezmoi"
 nvm use v11.14.0
 
 set -gx PATH $PATH /opt/miniconda/bin
