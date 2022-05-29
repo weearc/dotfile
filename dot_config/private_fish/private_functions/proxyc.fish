@@ -10,7 +10,7 @@ function proxyc
 			echo "Invalid input: not integer."
 		else
 			set -g http_proxy "http://127.0.0.1:$argv[2]"
-			echo "http_proxy if set at http://127.0.0.1:$argv[2] global"
+			echo "http_proxy is set at http://127.0.0.1:$argv[2] global"
 		end
 	else if test "$argv[1]" = "enable"
 		and test "$argv[2]" = ""
