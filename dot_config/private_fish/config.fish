@@ -1,7 +1,3 @@
-# set fish_function_path $fish_function_path "/usr/share/powerline/bindings/fish"
-# source /usr/share/powerline/bindings/fish/powerline-setup.fish
-# powerline-setup
-
 set -x  PATH $PATH /home/ddqi/bin
 set -gx PATH $PATH /home/ddqi/bin/go/bin
 set -x -U GOPATH $HOME/go
@@ -22,5 +18,7 @@ nvm use v11.14.0
 set -gx PATH $PATH /opt/miniconda/bin
 
 alias winetricks="winetricks --gui=zenity --country=CN"
+
+
 
 clear
