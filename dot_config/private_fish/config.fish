@@ -1,6 +1,4 @@
 set -x  PATH $PATH /home/ddqi/bin
-set -gx PATH $PATH /home/ddqi/bin/go/bin
-set -x -U GOPATH $HOME/go
 set -gx PATH $PATH /home/ddqi/bin/flutter/bin
 set -gx PATH $PATH /home/ddqi/.bin
 set -gx PATH $PATH /home/ddqi/.local/bin
