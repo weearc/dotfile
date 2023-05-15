@@ -19,11 +19,11 @@ export TERM="xterm-256color"
 # ZSH_THEME="hyperzsh"
 # ZSH_THEME="fishy"
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-# ZSH_THEME="powerlevel9k"
-# POWERLEVEL9K_MODE='awesome'
-# POWERLEVEL9K_DISABLE_RPROMPT=false
-# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-# POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=" "
+ZSH_THEME="powerlevel10k"
+POWERLEVEL9K_MODE='awesome'
+POWERLEVEL9K_DISABLE_RPROMPT=false
+POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=" "
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -128,11 +128,12 @@ alias Tayutama="wine /home/ddqi/.local/share/Steam/steamapps/common/tayutama\ 2\
 alias jekyll="bundle exec jekyll"
 alias screenfetch="screenfetch -D archlinux | lolcat"
 alias brevent="adb -d shell sh /data/data/me.piebridge.brevent/brevent.sh"
+export HUGO_HOME=$HOME/hugo-blog
+alias hugo="cd $HUGO_HOME/public && rm -rf * && cd $HUGO_HOME/ && /usr/bin/hugo && cd $HUGO_HOME/public && git add . && git commit -m 'update blog' && git push -u origin master"
 
 export ELECTRON_MIRROR='https://npm.taobao.org/mirrors/electron/'
 export SASS_BINARY_SITE='https://npm.taobao.org/mirrors/node-sass'
 export PATH=/home/ddqi/.gem/ruby/2.6.0/bin:$PATH
-source /usr/share/zsh-theme-powerlevel9k/powerlevel9k.zsh-theme
 DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
 export PATH=/home/ddqi/.gem/ruby/2.6.0/bin:/home/ddqi/.local/bin:/home/ddqi/.bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
 export PATH="$PATH":"$HOME/.pub-cache/bin"
