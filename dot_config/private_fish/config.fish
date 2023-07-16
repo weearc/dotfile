@@ -12,8 +12,8 @@ set -gx EDITOR $EDITOR /usr/bin/vim
 alias bc="bc -l"
 alias czm="chezmoi"
 
-nvm use v11.14.0
-set -gx PATH $PATH /opt/miniconda/bin
+#nvm use v11.14.0
+#set -gx PATH $PATH /opt/miniconda/bin
 
 alias winetricks="winetricks --gui=zenity --country=CN"
 
