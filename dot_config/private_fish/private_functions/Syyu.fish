@@ -1,3 +1,3 @@
 function Syyu
-	sudo pacman -Syyu --noconfirm
+	sudo zypper up && sudo zypper dup
 end

@@ -1,3 +1,3 @@
 function S
-	sudo pacman -S $argv
+	sudo zypper in --recommends $argv
 end

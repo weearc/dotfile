@@ -1,3 +1,3 @@
 function Ss
-	pacman -Ss $argv
+	zypper se $argv
 end

@@ -1,3 +1,3 @@
 function Syy
-	echo 19981121|sudo pacman -Syy
+	sudo zypper up
 end
