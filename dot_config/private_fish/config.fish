@@ -17,6 +17,7 @@ atuin init fish | source
 bind \cf _atuin_search
 bind -M insert \cf _autin_search
 
+source $HOME/.config/fish/env.fish
 
 alias bc="bc -l"
 alias czm="chezmoi"
@@ -26,7 +27,5 @@ alias neofetch="fastfetch"
 #set -gx PATH $PATH /opt/miniconda/bin
 
 alias winetricks="winetricks --gui=zenity --country=CN"
-
-
 
 clear
