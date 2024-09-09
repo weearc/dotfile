@@ -16,9 +16,13 @@ set -gx CUDA_CACHE_PATH "$XDG_CACHE_HOME"/nv
 set -gx DOCKER_CONFIG "$XDG_CONFIG_HOME"/docker
 
 # [dosbox]: /home/ddqi/.dosbox
-alias dosbox=dosbox -conf "$XDG_CONFIG_HOME"/dosbox/dosbox.conf
+alias dosbox='dosbox -conf "$XDG_CONFIG_HOME"/dosbox/dosbox.conf'
 
 # [dotnet]: /home/ddqi/.dotnet
 set -gx DOTNET_CLI_HOME "$XDG_DATA_HOME"/dotnet
+
+
+# conda
+set -gx PATH $PATH /opt/miniconda/bin
 
 
