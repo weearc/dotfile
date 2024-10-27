@@ -1,8 +1,11 @@
-function ffmpeg-bilibili
+function ffmpeg-bilibili-cuda
 	echo "Press any key to continue or press Ctrl^C to stop..."
 	read -s -n1 -p "test"
 	
 	ffmpeg -i $argv[1] \
+		-hwaccel cuda \
+		-hwaccel_output_format cuda \
+		-c:v h264_nvenc \
 		-vcodec libx264 \
 		-preset veryslow \
 		-profile:v high \
@@ -19,6 +22,9 @@ function ffmpeg-bilibili
 		-ar 44100 \
 		-f flv tmpfile -y
 	and ffmpeg -i tmpfile \
+		-hwaccel cuda \
+  		-hwaccel_output_format cuda \
+  		-c:v h264_nvenc \
 		-vcodec libx264 \
 		-preset veryslow \
 		-profile:v high \
