@@ -7,7 +7,7 @@ set -gx XDG_CACHE_HOME $HOME/.cache
 #
 # [android]: /home/ddqi/.android
 set -gx ANDROID_USER_HOME "$XDG_DATA_HOME"/android
-alias adb='HOME="$XDG_DATA_HOME"/android adb'
+alias adb='HOME="$XDG_DATA_HOME"/android /usr/bin/adb'
 
 # [cuda]: /home/ddqi/.nv
 set -gx CUDA_CACHE_PATH "$XDG_CACHE_HOME"/nv
